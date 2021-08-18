@@ -34,6 +34,9 @@
     {% block body %}{% endblock body %}
     <script src="{%static 'js/ckeditor/ckeditor.js'%}"></script>
     <script src="{%static 'js/app.js'%}"></script>
+    <script>
+        {% block script %}{% endblock script %}
+    </script>
 </body>
 
 </html>
