@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Kshitij Gaming Blogs Admin Panel{% endblock title %}
+
+{% block body %}
+    <div class="home_" id="home">
+        <div class="container">
+            <h1 id="posts_h1">Add your Posts here</h1>
+            <form action="#" class="my-2 mx-2" method="post">
+                <div class="form_feilds mb-2">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" placeholder="Enter Posts Title">
+                </div>
+                <div class="form_feilds mb-2">
+                    <label for="desc">Post Description:</label>
+                    <textarea name="desc" id="desc" placeholder="Enter Posts Description" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form_feilds mb-2">
+                    <label for="date">Image:</label>
+                    <input type="datetime-local" id="date" placeholder="Enter Date">
+                </div>
+                <div class="form_feilds mb-2">
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" accept="*/images">
+                </div>
+                <div class="form_feilds mb-2">
+                    <label for="posted_by">Posted By:</label>
+                    <input type="text" id="posted_by" placeholder="Enter your name">
+                </div>
+                <button class="btn_form mb-2" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock body %}
+{% block script %}
+    CKEDITOR.replace("desc");
+{% endblock script %}
