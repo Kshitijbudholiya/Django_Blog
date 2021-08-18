@@ -404,3 +404,86 @@ nav .logo {
   color: #c1c1c1 !important;
   pointer-events: none;
 }
+
+.container {
+  height: auto;
+  width: 85%;
+  background-color: white;
+  margin: auto;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_feilds {
+  flex-direction: column;
+  display: flex;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.mx-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#posts_h1 {
+  color: black;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.form_feilds label {
+  font-size: larger;
+}
+
+.form_feilds input {
+  border: 1px solid;
+  height: 2.2em;
+  font-size: 0.88rem;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+#image {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form_feilds textarea {
+  font-size: 0.89rem;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.btn_form {
+  width: 5em;
+  background-color: #388e3c;
+  height: 2.5em;
+  border-radius: 14px;
+  color: white;
+  border: 1px solid #388e3c;
+}
+
+.btn_form:hover {
+  background-color: transparent;
+  border: 1px solid #388e3c;
+  color: #388e3c;
+  cursor: pointer;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
