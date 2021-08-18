@@ -103,7 +103,7 @@ nav .logo {
 }
 
 .home_ {
-  height: 100vh;
+  height: auto;
   background-color: gray;
   opacity: 0.8;
   display: flex;
@@ -410,6 +410,8 @@ nav .logo {
   width: 85%;
   background-color: white;
   margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .container form {
@@ -438,7 +440,7 @@ nav .logo {
 
 #posts_h1 {
   color: black;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: 2rem;
 }
 
