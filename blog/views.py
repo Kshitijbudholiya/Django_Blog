@@ -21,12 +21,14 @@ def index(request):
 def search(request):
     search_name = request.GET.get('search')
     post = blog.objects.filter(Q(title__icontains=search_name)).order_by('id')
-    print(post.count())
-    if(post.count()==0):
-        return HttpResponse("Nahi Hai")
+    if(search_name==""):
+        return HttpResponse("Kuch To Likh")
     else:
-        pagi = Paginator(post, 5)
-        page_num = request.GET.get('page')
-        page_obj = pagi.get_page(page_num)
-        params = {"search": search_name, "posts": page_obj}
-        return render(request, 'search.html', params)
+        if(post.count()==0):
+            return HttpResponse("Nahi Hai")
+        else:
+            pagi = Paginator(post, 5)
+            page_num = request.GET.get('page')
+            page_obj = pagi.get_page(page_num)
+            params = {"search": search_name, "posts": page_obj}
+            return render(request, 'search.html', params)
