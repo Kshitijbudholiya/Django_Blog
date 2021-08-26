@@ -21,6 +21,12 @@
             <li><a href="#home">{% block nav_item_1 %}{% endblock nav_item_1 %}</a></li>
             <li><a href="#contact">{% block nav_item_3 %}{% endblock nav_item_3 %}</a></li>
             <li><a href="#about">{% block nav_item_4 %}{% endblock nav_item_4 %}</a></li>
+            <div class="search_panel nav_sea_pan my-2">
+                <form action="/search/" class="search_form nav_sea" method="GET">
+                    <input class="search_inp" name="search" type="text" placeholder="Search..">
+                    <button type="submit" class="search_btn">Search</button>
+                </form>
+            </div>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             <span class="icons">
                 <i class="fab fa-facebook"></i>
