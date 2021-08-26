@@ -489,3 +489,15 @@ nav .logo {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.container_search{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container_search h1{
+  text-align: center;
+  font-size: 3rem;
+}

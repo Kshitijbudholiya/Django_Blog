@@ -1,11 +1,12 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class blog(models.Model):
     title = models.CharField(max_length=100 ,default="")
-    desc = models.TextField(default="")
+    desc = RichTextField(default="")
     image = models.ImageField(default="")
-    date = models.DateField(default="")
+    date = models.DateTimeField()
     posted_by = models.CharField(max_length=100, default="")
 
     # Display the title in admin page

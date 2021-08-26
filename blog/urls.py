@@ -4,5 +4,5 @@ from .import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('blogadmin/', views.admin, name="admin"),
+    path('search/', views.search, name="search"),
 ]
