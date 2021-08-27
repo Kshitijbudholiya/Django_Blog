@@ -2,12 +2,6 @@
 
 {% block title %}Kshitij Gaming Blogs{% endblock title %} 
 
-{% block nav_item_1 %}Home{% endblock nav_item_1 %} 
-
-{% block nav_item_3 %}About Us{% endblock nav_item_3 %} 
-
-{% block nav_item_4 %}Contact Us{% endblock nav_item_4 %} 
-
 {% block body %}
 
 <!-- This is main body -->
@@ -25,9 +19,9 @@
         <!-- this is for main content in the card -->
         <div class="left_main_content_side">
           <div class="post_title">
-            <h5 class="x-large">
+            <h1 class="title_font">
               {{i.title}}
-            </h5>
+            </h1>
           </div>
           <div class="post_desc">
             <p>
@@ -50,7 +44,7 @@
   <!-- this is left side of main body -->
   <div class="left_main my-2">
     <div class="search_panel my-2">
-      <h1 class="text_center">Search Here</h1>
+      <h2 class="text_center fo_se">Search Here</h2>
       <form action="/search/" class="search_form" method="GET">
         <input class="search_inp" name="search" type="text" placeholder="Search..">
         <button type="submit" class="search_btn">Search</button>

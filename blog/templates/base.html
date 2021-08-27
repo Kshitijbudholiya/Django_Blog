@@ -5,6 +5,8 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hii, My Name is Kshitij Budholiya, I am a Full stack Web Developer. This is My Gaming BLog Website Where i am Trying To Brought You every possible Game On my Website, You Can Send Me Your Sugesstions by Contacting Me. Hope you Will love it.">
+    <meta name="keywords" content="Kshitij Gaming Blogs, kshitij gaming blogs, gaming, Gaming, Gta, Gta V, blogs, games, Highly Compressed games, Games, Gta V Highly Compressed">
     <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -18,9 +20,9 @@
         </div>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
-            <li><a href="#home">{% block nav_item_1 %}{% endblock nav_item_1 %}</a></li>
-            <li><a href="#contact">{% block nav_item_3 %}{% endblock nav_item_3 %}</a></li>
-            <li><a href="#about">{% block nav_item_4 %}{% endblock nav_item_4 %}</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
             <div class="search_panel nav_sea_pan my-2">
                 <form action="/search/" class="search_form nav_sea" method="GET">
                     <input class="search_inp" name="search" type="text" placeholder="Search..">
@@ -37,6 +39,11 @@
         </ul>
     </nav>
     {% block body %}{% endblock body %}
+
+    <footer class="foot">
+        <p class="text_center">Copyright 2021-2022. Kshitij Gaming Blogs.</p>
+    </footer>
+
     <script src="{%static 'js/app.js'%}"></script>
     <script>
         {% block script %}{% endblock script %}

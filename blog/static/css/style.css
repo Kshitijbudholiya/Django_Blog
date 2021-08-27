@@ -511,3 +511,166 @@ nav .logo {
     display: block;
   }
 }
+
+.container_fluid{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_fluid h1{
+  font-size: 7rem;
+}
+
+.container_fluid p{
+  font-size: 2rem;
+}
+
+.container_fluid button{
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  padding: 7px;
+  background-color: #40968e9e;
+}
+
+.container_fluid button a{
+  color: #000;
+  text-decoration: none;
+}
+
+.main_about{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me{
+  width: 50%;
+  padding: 20px;
+}
+
+.my_img{
+  width: 50%;
+  height: 100%;
+}
+
+.my_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.container_contact{
+  width: 100%;
+  height: 100%;
+}
+
+.contact_div_form{
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_div_form form{
+  width: 50%;
+}
+
+.contact_div_form form label{
+  display: block;
+  font-size: 1.2rem;
+}
+
+.form_fields_ input{
+  width: 100%;
+  width: 100%;
+  border: 1px solid;
+  font-size: .9rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form_fields_ textarea{
+  width: 100%;
+  border: 1px solid;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.contact_div_form form button{
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background-color: #00a3a996;
+}
+
+@media all and (max-width:850px) {
+  .contact_div_form{
+    width: 100%;
+  }
+}
+
+@media all and (max-width:700px) {
+  .contact_div_form form{
+    width: 70%;
+  }
+}
+
+@media all and (max-width:550px) {
+  .contact_div_form form{
+    width: 90%;
+  }
+}
+
+@media all and (max-width:494px) {
+  .container_fluid h1{
+    font-size: 5rem;
+  }
+}
+
+.foot{
+  background-color: #000;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot p{
+  color: white;
+}
+
+.title_font{
+  font-size: 1.5rem;
+}
+
+.fo_se{
+  font-size: 1.8rem;
+}
+
+
+@media all and (max-width:882px) {
+  #special{
+    font-size: 3rem!important;
+  }
+}
+
+@media all and (max-width:497px) {
+  #special{
+    font-size: 2rem!important;
+  }
+}
