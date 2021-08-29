@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Kshitij Gaming Blogs | {% endblock title %}
+
+{% block body %}
+
+<div class="container_fluid_post">
+    <div class="img_post">
+        <img src="/media/{{post.image}}" alt="image">
+    </div>
+    <div class="title_post">
+        <h1>{{post.title}}</h1>
+    </div>
+    <hr>
+    <div class="main_content_post">
+        <p>{{post.desc| safe}}</p>
+    </div>
+    <hr>
+    <div class="comment">
+        <h1>Comments</h1>
+        <form action="/comment/" method="post">
+            {% csrf_token %}
+            <div class="comment_fields">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Write your Name" required>
+            </div>
+            <div class="comment_fields">
+                <label for="textarea">Comment Now:</label>
+                <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="Write Down Your Comment Here" required></textarea>
+            </div>
+            <input type="hidden" name="post_id" value="{{id}}">
+            <button type="submit">Submit</button>
+        </form>
+
+        {% for i in comment %}
+            <div class="show_comments">
+                <div class="img_user"><i class="fas fa-user user"></i></div>
+                <hr>
+                <div class="comment">
+                    <div class="user_name"><b>{{i.name}}</b></div>
+                    <div class="main_comment"><pre>{{i.comment}}</pre></div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock body %}

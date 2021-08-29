@@ -9,7 +9,7 @@
   <!-- this is right side of main body -->
   <div class="right_main">
     {% for i in posts reversed %}
-    <a href="#">
+    <a href="/post/{{i.id}}">
       <div class="card_body my-2">
         <!-- this is for image in the card -->
         <div class="right_image_side">
@@ -25,7 +25,7 @@
           </div>
           <div class="post_desc">
             <p>
-              {{i.desc| safe |slice:250}}
+              {{i.desc| safe |slice:350}}...
             </p>
           </div>
           <div class="posted_by_on">

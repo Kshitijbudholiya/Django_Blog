@@ -2,9 +2,9 @@ from os import name
 from django.core import paginator
 from django.db.models.aggregates import Count
 from django.db.models.query_utils import Q
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
-from .models import blog, contact
+from .models import blog, contact, comme
 from math import ceil
 from django.core.paginator import Paginator
 
@@ -48,3 +48,19 @@ def contact_save(request):
     contact_form = contact(name=name, desc=desc, email=email, phone=phone)
     contact_form.save()
     return render(request, 'save_cont.html')
+
+def posts(request, post_id):
+    post = blog.objects.all().filter(id=post_id)
+    comments = comme.objects.all().filter(postid=post_id)
+    print(comments)
+    return render(request, 'post.html', {"post": post[0], "id": post_id, "comment": comments})
+
+def comment(request):
+    post_id = request.POST['post_id']
+    comment = request.POST['comment']
+    name = request.POST['name']
+    #saving it
+    comment_form = comme(postid=post_id, name=name, comment=comment)
+    comment_form.save()
+    return redirect('/post/'+post_id)
+    

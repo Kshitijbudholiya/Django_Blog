@@ -185,6 +185,7 @@ nav .logo {
 
 .post_desc {
   margin-top: 0.5rem;
+  overflow-wrap: anywhere;
 }
 
 .posted_by_on {
@@ -673,4 +674,153 @@ nav .logo {
   #special{
     font-size: 2rem!important;
   }
+}
+
+.container_fluid_post{
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #9e9e9e87;;
+  padding: 6px;
+}
+
+.img_post{
+  height: 20em;
+  width: 100%;
+}
+
+.img_post img{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_post{
+  margin: 5px 0px;
+}
+
+.main_content_post{
+  margin: 10px 0px;
+}
+
+.comment{
+  margin: 5px 0px;
+}
+
+.comment_fields label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.comment_fields textarea{
+  width: 70%;
+  height: 10em;
+  padding: 6px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+@media all and (max-width:812px) {
+  .comment_fields textarea{
+    width: 100%;
+  }
+}
+
+.show_comments{
+  height: auto;
+  width: 100%;
+  margin: 5px 0px;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+}
+
+.img_user{
+  width: 4rem;
+  padding: 5px;
+  height: auto;
+  display: flex;
+}
+
+.user{
+  font-size: 3rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_desc p{
+  font-size: 1rem;
+}
+
+.post_desc h1{
+  display: none;
+}
+
+.post_desc h2{
+  display: none;
+}
+
+.post_desc h3{
+  display: none;
+}
+
+.post_desc h4{
+  display: none;
+}
+
+.post_desc h5{
+  display: none;
+}
+
+.post_desc h6{
+  display: none;
+}
+
+.main_content_post{
+  font-size: 1.2rem;
+}
+
+.comment{
+  font-size: 1.1rem;
+}
+
+#search_box{
+  width: 26%;
+  border: 1px solid green;
+  height: 1.8rem;
+  color: green;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: auto;
+  background: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.comment_fields input{
+  width: 70%;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-size: .9rem;
+}
+
+.comment form button{
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #0d6efd;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 4px;
+  border-color: #0d6efd;
+}
+
+.comment form button{
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
 }
