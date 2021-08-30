@@ -52,7 +52,6 @@ def contact_save(request):
 def posts(request, post_id):
     post = blog.objects.all().filter(id=post_id)
     comments = comme.objects.all().filter(postid=post_id)
-    print(comments)
     return render(request, 'post.html', {"post": post[0], "id": post_id, "comment": comments})
 
 def comment(request):
