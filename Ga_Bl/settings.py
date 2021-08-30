@@ -25,7 +25,7 @@ with open(BASE_DIR / 'MyNameIs.txt') as f:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['mygamingblogs.ga', 'www.mygamingblogs.ga', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['mygamingblogs.herokuapp.com', 'www.mygamingblogs.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
